@@ -1,0 +1,259 @@
+@import 'settings';
+@import 'foundation';
+
+body {
+    margin: 0 auto;
+}
+/* ========== Header Styles ========== */
+
+.blog-logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    text-align:center;
+}
+
+.blog-title {
+    color: $darkgrey;
+    display: block;
+    font-size: 24px;
+    font-style: normal;
+    line-height: 100%;
+    letter-spacing: -0.8px;
+}
+
+.mail-issue {
+    color: $midgrey;
+    display: block;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 100%;
+    letter-spacing: -0.6px;
+}
+
+/* ========== Body Styles ========== */
+
+.feature-post-image {
+    height: auto !important;
+    width: 100% !important;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    z-index: 99;
+    border: 0 none;
+}
+
+.feature-post-content {
+    border: 1px solid #E1E1E1;
+    border-top: none;
+    border-radius: 7px !important;
+}
+
+.feature-post-content.no-picture {
+    border-top: 1px solid #E1E1E1 !important;
+}
+
+.feature-post-title {
+    color: $darkgrey !important;
+    a {
+        font-size: 22px;
+        line-height: 24px;
+        font-weight: bold;
+        letter-spacing: normal;
+        color: $darkgrey !important;
+        text-decoration: none;
+    }
+    a:hover {
+        color: $darkgrey !important;
+        text-decoration: underline;
+    }
+}
+
+.feature-post-text {
+    font-size: 17px;
+    line-height: 23px !important;
+    color: $midgrey;
+    letter-spacing: normal;
+}
+
+.read-more-button {
+    color: #FFFFFF !important;
+    a {
+        color: #FFFFFF !important;
+    }
+}
+
+table.button.primary:hover table td {
+    background: $darkblue;
+}
+
+.author-tag {
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.post-title {
+    color: $darkgrey !important;
+    a {
+        font-size: 21px;
+        line-height: 24px;
+        font-weight: bold;
+        letter-spacing: normal;
+        color: $darkgrey !important;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+.post-text {
+    color: $midgrey !important;
+    display: block;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 22px;
+    letter-spacing: normal;
+}
+
+/* ========== Footer Styles ========== */
+
+.find-more-button {
+    font-size: 17px !important;
+    color: #FFFFFF !important;
+    a {
+        color: #FFFFFF !important;
+    }
+}
+
+// find-more-button
+table.button.secondary table td {
+    border: 0;
+}
+
+// find-more-button
+table.button.secondary:hover table td {
+    background: $midgrey;
+}
+
+// find-more-button
+table.button.expanded table {
+    width: 100%;
+}
+
+// force Outlook 2007+ to expand buttons (.read-more-button & .find-more-button) to 100% width
+.button {
+  &.expand, &.expanded {
+    td:not(.expander) {
+      width: 100%;
+      height: 42px;
+      vertical-align: middle;
+    }
+  }
+}
+
+.social-links {
+    font-size: 17px;
+    line-height: 20px;
+    a {
+        color: $blue !important;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+.unsubscribe-text {
+    font-size: 14px;
+    letter-spacing: -0.47px;
+    line-height: 16px;
+    text-align: center;
+    a {
+        color: $midgrey !important;
+        text-decoration: underline;
+    }
+}
+
+/* Small only */
+@media only screen and (max-width: #{$global-breakpoint}) {
+    /* ========== Header Styles ========== */
+
+
+    /* ========== Body Styles ========== */
+
+    // feature-post-image
+    table.body img {
+        width: 100% !important;
+    }
+
+    /* ========== Footer Styles ========== */
+
+}
+
+/* Small only */
+@media only screen and (max-width: 320px) {
+    /* ========== Header Styles ========== */
+    .blog-title {
+        font-size: 22px;
+    }
+
+    .mail-issue {
+        font-size: 16px;
+    }
+
+    /* ========== Body Styles ========== */
+
+    .feature-post-title {
+        a {
+            font-size: 20px;
+            line-height: 22px;
+        }
+    }
+
+    .feature-post-text {
+        font-size: 15px;
+        line-height: 21px !important;
+    }
+
+    .read-more-button {
+        font-size: 15px !important;
+    }
+
+    table.button.large table a {
+        font-size: 15px !important;
+    }
+
+    .author-tag {
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .post-title {
+        a {
+            font-size: 19px;
+            line-height: 22px;
+        }
+    }
+
+    .post-text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    /* ========== Footer Styles ========== */
+
+    .find-more-button {
+        font-size: 15px !important;
+    }
+
+    .social-links {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .unsubscribe-text {
+        font-size: 12px;
+        line-height: 14px;
+    }
+}

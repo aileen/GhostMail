@@ -1,0 +1,259 @@
+---
+subject: The Ghost Blog
+---
+<container>
+    <!-- Start header -->
+    <row>
+        <columns large="28" small="28">
+            <spacer size="70"></spacer>
+        </columns>
+    </row>
+
+    <!-- #if blogLogo -->
+        <row width="70">
+            <columns large="28" small="28">
+                <center>
+                    <!-- Blog logo -->
+                    <img class="blog-logo" src="https://avatars1.githubusercontent.com/u/2178663?v=3&s=400g" alt="Blog Logo" width="70" height="70" style="width:70px !important;">
+                </center>
+            </columns>
+        </row>
+    <!-- /if 'blogLogo' -->
+
+    <row>
+        <columns large="28" small="28">
+            <spacer size="20"></spacer>
+        </columns>
+    </row>
+    <row>
+        <columns large="28" small="28">
+            <!-- Blog title -->
+            <h1 class="blog-title text-center">The Ghost Blog</h1>
+        </columns>
+    </row>
+    <row>
+        <columns large="28" small="28">
+            <spacer size="10"></spacer>
+        </columns>
+    </row>
+    <row>
+        <columns large="28" small="28">
+            <!-- interval & date -->
+            <h3 class="text-center mail-issue"><span style="text-transform:capitalize;">weekly</span> digest &mdash; <span style="text-transform:capitalize;">june 9th, 2016</span></h3>
+        </columns>
+    </row>
+    <row>
+        <columns large="28" small="28">
+            <spacer size="50"></spacer>
+        </columns>
+    </row>
+    <!-- / End header -->
+
+    <!-- Start featured blog post -->
+
+    <!-- #if 'Blog Post Picture' -->
+    <row width="100%">
+        <columns large="28" small="28" width="580" height="268" style="width:580px;height:268px;">
+            <center>
+                <img class="feature-post-image" src="https://blog.ghost.org/content/images/2016/05/ghost3.jpg" alt="Feature Image" width="580" heigth="268"/>
+            </center>
+        </columns>
+    </row>
+    <!-- /if 'Blog Post Picture' -->
+
+    <row>
+        <columns large="28" small="28">
+
+            <!-- Begin Post #1 -->
+            <!-- add inline style `border-top: 1px solid #E1E1E1;border-top-left-radius: 7px;border-top-right-radius: 7px;` to `<row class="feature-post-content">` when not feature image supplied -->
+            <!-- #if 'Blog Post Picture' -->
+                <row class="feature-post-content">
+            <!-- #else -->
+                <!-- <row class="feature-post-content no-picture"> -->
+            <!-- /if 'Blog Post Picture' -->
+                <columns small="2" large="2">&nbsp;</columns>
+                <columns small="24" large="24">
+                    <row class="collapse">
+                        <columns large="28" small="28">
+                            <spacer size="30"></spacer>
+                        </columns>
+                    </row>
+                    <row class="collapse">
+                        <columns large="28" small="28">
+                            <!-- Post #1 title & Post #1 URL-->
+                            <h2 class="feature-post-title"><a href="#" target="_blank"><font color="#242628">
+                                It&#8217;s our birthday! Three years down, $600,000 annual revenue, and what&#8217;s coming next
+                            </font></a></h2>
+                        </columns>
+                    </row>
+                    <row class="collapse">
+                        <columns large="28" small="28">
+                            <spacer size="20"></spacer>
+                        </columns>
+                    </row>
+                    <row class="collapse">
+                        <columns large="28" small="28">
+                            <!-- Post #1 text -->
+                            <p class="feature-post-text">
+                                On the 29th of April in 2013, I sat down in a beautiful little co-working space in Austria called Daxbau, and launched the Ghost Kickstarter campaign. Almost precisely 3 years later, I&#8217;ve returned to the exact same spot to write this post while I await the rest of the Ghost team to join me here…
+                            </p>
+                        </columns>
+                    </row>
+                    <row class="collapse">
+                        <columns large="28" small="28">
+                            <spacer size="24"></spacer>
+                        </columns>
+                    </row>
+                    <row class="collapse">
+                        <columns small="28" large="28" align="center">
+                            <!-- Post #1 URL-->
+                            <button href="#" target="_blank" class="large radius expand primary read-more-button"><font color="#FFFFFF">
+                                Read More
+                            </font></button>
+                        </columns>
+                    </row>
+                    <row class="collapse">
+                        <columns large="28" small="28">
+                            <spacer size="35"></spacer>
+                        </columns>
+                    </row>
+                </columns>
+                <columns small="2" large="2">&nbsp;</columns>
+            </row>
+            <!-- End Post #1 -->
+        </columns>
+    </row>
+    <!-- / End featured blog post -->
+    <row>
+        <columns large="28" small="28">
+            <spacer size="42"></spacer>
+        </columns>
+    </row>
+    <!-- Start blog posts -->
+    <!-- #if number of posts > 1 -->
+    <row>
+        <columns large="2" small="2">&nbsp;</columns>
+        <columns large="24" small="24">
+            <!-- post #2 tag & post #2 author -->
+            <p class="text-left text-left author-tag">
+                New things / John O’Nolan
+            </p>
+            <spacer size="7"></spacer>
+            <!-- post #2 url & post #2 title -->
+            <h2 class="post-title"><a href="#" target="_blank"><font color="#242628">
+                Ghost Desktop
+            </font></a></h2>
+            <spacer size="5"></spacer>
+            <!-- post #2 text -->
+            <p class="text-left post-text">
+                Using Ghost in your browser is great, but wouldn&#8217;t it be useful if it had its own app to keep it separate from the noise of all your other tabs - while providing quick access to all your blogs whenever you need to use them? Well, Ghost Desktop is our new app – available on Mac,…
+            </p>
+        </columns>
+        <columns large="2" small="2">&nbsp;</columns>
+    </row>
+    <row>
+        <columns large="28" small="28">
+            <spacer size="40"></spacer>
+        </columns>
+    </row>
+    <!-- #if number of posts > 2 -->
+    <row>
+        <columns large="2" small="2">&nbsp;</columns>
+        <columns large="24" small="24">
+            <!-- post #3 tag & post #3 author -->
+            <p class="text-left text-left author-tag">
+                New things / John O’Nolan
+            </p>
+            <spacer size="7"></spacer>
+            <!-- post #3 url & post #3 title -->
+            <h2 class="post-title"><a href="#" target="_blank"><font color="#242628">
+                Ghost Desktop
+            </font></a></h2>
+            <spacer size="5"></spacer>
+            <!-- post #3 text -->
+            <p class="text-left post-text">
+                Using Ghost in your browser is great, but wouldn&#8217;t it be useful if it had its own app to keep it separate from the noise of all your other tabs - while providing quick access to all your blogs whenever you need to use them? Well, Ghost Desktop is our new app – available on Mac,…
+            </p>
+        </columns>
+        <columns large="2" small="2">&nbsp;</columns>
+    </row>
+    <row>
+        <columns large="28" small="28">
+            <spacer size="40"></spacer>
+        </columns>
+    </row>
+
+    <!-- #if number of posts > 3 -->
+    <row>
+        <columns large="2" small="2">&nbsp;</columns>
+        <columns large="24" small="24">
+            <!-- post #4 tag & post #4 author -->
+            <p class="text-left text-left author-tag">
+                New things / John O’Nolan
+            </p>
+            <spacer size="7"></spacer>
+            <!-- post #4 url & post #4 title -->
+            <h2 class="post-title"><a href="#" target="_blank"><font color="#242628">
+                Ghost Desktop
+            </font></a></h2>
+            <spacer size="5"></spacer>
+            <!-- post #4 text -->
+            <p class="text-left post-text">
+                Using Ghost in your browser is great, but wouldn&#8217;t it be useful if it had its own app to keep it separate from the noise of all your other tabs - while providing quick access to all your blogs whenever you need to use them? Well, Ghost Desktop is our new app – available on app,…
+            </p>
+        </columns>
+        <columns large="2" small="2">&nbsp;</columns>
+    </row>
+    <!-- / End blog posts -->
+    <!-- Start footer -->
+    <row>
+        <columns large="28" small="28">
+            <row>
+                <columns large="28" small="28">
+                    <spacer size="62"></spacer>
+                </columns>
+            </row>
+            <row>
+                <columns large="3" small="3">&nbsp;</columns>
+                <columns large="22" small="22">
+                    <!-- blog URL && blog title -->
+                    <button href="#" target="_blank" class="secondary large rounded expanded find-more-button"><font color="#FFFFFF">
+                        Find more on The Ghost Blog or somewhere
+                    </font></button>
+                </columns>
+                <columns large="3" small="3">&nbsp;</columns>
+            </row>
+            <row>
+                <columns large="28" small="28">
+                    <spacer size="10"></spacer>
+                    <!-- twitter blog URL & facebook blog URL -->
+                    <p class="text-center social-links">
+                        or follow us on
+                        <a href="#" target="_blank"><font color="#5BA4E5">Twitter</font></a> &amp;
+                        <a href="#" target="_blank"><font color="#5BA4E5">Facebook</font></a> for instant updates</p>
+                </columns>
+            </row>
+            <row>
+                <columns large="28" small="28">
+                    <spacer size="57"></spacer>
+                </columns>
+            </row>
+        </columns>
+    </row>
+    <!-- /if number of posts > 3 -->
+    <!-- /if number of posts > 2 -->
+    <!-- /if number of posts > 1 -->
+    <row>
+        <columns large="28" small="28">
+            <!-- unsubscribe link & blog title -->
+            <p class="unsubscribe-text">You’re receiving this email because you subscribed to weekly emails from The Ghost Blog <br>
+            If you’d prefer not to receive these, you can <a href="#" target="_blank"><font color="#7d878a">unsubscribe instantly</font></a>.</p>
+        </columns>
+    </row>
+    <row>
+        <columns large="28" small="28">
+            <spacer size="38"></spacer>
+        </columns>
+    </row>
+    <!-- / End footer -->
+</container>
